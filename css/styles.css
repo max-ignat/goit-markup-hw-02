@@ -1,0 +1,12 @@
+:root {
+
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+        font-family: 'Raleway', sans-serif;
+        font-family: 'Roboto', sans-serif;
+}
+
+.list {
+    list-style: none;
+}
