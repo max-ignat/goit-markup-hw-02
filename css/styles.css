@@ -1,12 +1,47 @@
 :root {
-
+    --primary-head-text : #212121;
+    --secondary-text : #757575;
+    --accent-color : #2196F3;
 }
 body {
-    font-family: 'Montserrat', sans-serif;
-        font-family: 'Raleway', sans-serif;
-        font-family: 'Roboto', sans-serif;
+    
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary-head-text);
+    
 }
 
-.list {
+ul {
     list-style: none;
+}
+a  {
+    text-decoration: none;
+}
+
+/* Логотип */
+
+
+/* site nav */
+.site-nav :hover, :focus {
+    color: brown;
+}
+
+
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+
+
+/* buttons */
+.button {
+    cursor: pointer;
+    background-color: #F5F4FA;
+    color: var(--primary-head-text)
+}
+.button:hover {
+    color: var(--accent-color);
+
+}
+.button:active {
+    color: green;
 }
