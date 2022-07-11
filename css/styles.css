@@ -58,7 +58,9 @@ color: var(--accent-color);
 .site-nav :focus {
     color: var(--hover-color);
 }
-
+.site-nav {
+    color : var(--primary-head-text)
+}
 .site-nav .link.current {
     color: var(--accent-color);
 }
