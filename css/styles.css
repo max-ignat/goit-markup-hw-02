@@ -74,13 +74,15 @@ color: var(--accent-color);
 }
 
 
-/* header-title */
+/* hero */
 .header-title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     background-color: var(--dark-bcg);
     color: white;
+    text-align: center;
+    text-transform: uppercase;
     
 }
 /* buttons */
@@ -135,14 +137,15 @@ color: var(--accent-color);
 .contact-link.route:focus {
     color: var(--hover-color);
 }
+.list.activities {
+    display: flex;
+}
 /* our team */
 .team {
-    background-color: var(--secondary-bcg);
-   
+    background-color: var(--secondary-bcg); 
 }
-.item-bcg {
-    background-color: var(--primary-bcg);
-}
+
+
 
 /* advantages */
 .advantage {
