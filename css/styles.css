@@ -6,6 +6,7 @@
     --dark-bcg : #2F303A;
     --hover-color : #188CE8;
     --secondary-bcg : #E5E5E5;
+    --team-bcg : #F5F4FA;
     --primary-font: 'Roboto', sans-serif;
     --logo-font : 'Raleway', sans-serif;
 }
@@ -17,6 +18,20 @@ body {
     background-color: var(--primary-bcg);
     font-size: 14px;
     letter-spacing: 0.03em;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 ul {
@@ -85,9 +100,7 @@ color: var(--accent-color);
     text-transform: uppercase;
     
 }
-.secondary-title {
-    text-align: center;
-}
+
 /* buttons */
 .button {
     cursor: pointer;
@@ -115,6 +128,22 @@ color: var(--accent-color);
     background-color: var(--hover-color);
     color: #ffffff;
 }
+/* portfolio buttons */
+
+.portfolio-button {
+    cursor: pointer;
+    color: var(--primary-head-text);
+    background-color: var(--team-bcg);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+}
+.portfolio-button:hover,
+.portfolio-button:focus {
+    background-color: var(--hover-color);
+    color: #ffffff;
+}
 
 /* links */
 .contact-link {
@@ -124,11 +153,12 @@ color: var(--accent-color);
 .contact-link:focus {
     color: var(--hover-color);
 }
-.secondary-title {
+.title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
-    letter-spacing: 0.03em; 
+    letter-spacing: 0.03em;
+    text-align: center;
 }
 .contact-link.route {
     font-weight: 400;
@@ -142,12 +172,29 @@ color: var(--accent-color);
 }
 .list.activities {
     display: flex;
+    
+}
+.list {
+    font-style: normal;
 }
 /* our team */
 .team {
-    background-color: var(--secondary-bcg); 
+    background-color: var(--team-bcg);
+    padding-left: 215px;
+    padding-right: 215px;
+    padding-top: 50px;
+    box-sizing: inherit;
+    width: 1600px;
+    height: 658;
+    
 }
 
+.employee {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    color: var(--primary-head-text);
+}
 
 
 /* advantages */
@@ -168,12 +215,7 @@ color: var(--accent-color);
 }
 
 /* our team */
-.employee {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.18;
-    color: var(--primary-head-text);
-}
+
 .position {
     font-weight: 400;
     font-size: 16px;
@@ -184,12 +226,17 @@ color: var(--accent-color);
 
 .portfolio-description {
     color: var(--secondary-text);
+    font-size: 16px;
+    line-height: 1.87;
 }
 
 /* footer */
 .footer {
     background-color: var(--dark-bcg);
 }
-.hide {
-    visibility: hidden;
+.list-item {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
 }
