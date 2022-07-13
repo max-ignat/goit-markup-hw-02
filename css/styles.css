@@ -73,13 +73,13 @@ color: var(--accent-color);
 .site-nav :focus {
     color: var(--hover-color);
 }
-.site-nav {
+.link{
     color : var(--primary-head-text)
 }
 .site-nav .link.current {
     color: var(--accent-color);
 }
-.site-nav, .contact-link {
+.link, .contact-link {
     font-family: Roboto;
     font-size: 14px;
     font-weight: 500;
@@ -95,42 +95,36 @@ color: var(--accent-color);
     font-size: 44px;
     line-height: 1.36;
     background-color: var(--dark-bcg);
-    color: white;
+    color: var(--primary-bcg);
     text-align: center;
     text-transform: uppercase;
-    
+}
+.main-title {
+    background-color: var(--dark-bcg);
 }
 
 /* buttons */
-.button {
+.button-main {
     cursor: pointer;
-    background-color: #F5F4FA;
-    color: #212121;
-}
-.button:hover,
-.button:focus {
-    color: #ffffff;
-    background-color: var(--hover-color);
-
-}
-.button:active {
-    color: #2F303A;
-}
-.button.main {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
     background-color: var(--accent-color);
-    color: #ffffff;
+    color: var(--primary-bcg);
+    letter-spacing: 0.06em;
+    align-items: center;
+    text-align: center;
 }
-.button.main:hover,
-.button.main:focus {
+
+.button-main:hover,
+.button-main:focus {
     background-color: var(--hover-color);
-    color: #ffffff;
+    color: var(--primary-bcg);
 }
 /* portfolio buttons */
 
 .portfolio-button {
+    font-family: Roboto;
     cursor: pointer;
     color: var(--primary-head-text);
     background-color: var(--team-bcg);
